@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C3081AFA223AE7D700E849A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3081AF9223AE7D700E849A0 /* AppDelegate.swift */; };
-		C3081AFC223AE7D700E849A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3081AFB223AE7D700E849A0 /* ViewController.swift */; };
 		C3081AFF223AE7D700E849A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3081AFD223AE7D700E849A0 /* Main.storyboard */; };
 		C3081B02223AE7D700E849A0 /* KanyeKwotesCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3081B00223AE7D700E849A0 /* KanyeKwotesCoreData.xcdatamodeld */; };
 		C3081B04223AE7D900E849A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3081B03223AE7D900E849A0 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		C3081AF6223AE7D700E849A0 /* KanyeKwotesCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanyeKwotesCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3081AF9223AE7D700E849A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3081AFB223AE7D700E849A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3081AFE223AE7D700E849A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3081B01223AE7D700E849A0 /* KanyeKwotesCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KanyeKwotesCoreData.xcdatamodel; sourceTree = "<group>"; };
 		C3081B03223AE7D900E849A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,63 @@
 		C3081AF8223AE7D700E849A0 /* KanyeKwotesCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				C3081AF9223AE7D700E849A0 /* AppDelegate.swift */,
-				C3081AFB223AE7D700E849A0 /* ViewController.swift */,
+				C3081B15223AE81100E849A0 /* View Controllers */,
+				C3081B14223AE81000E849A0 /* Views */,
+				C3081B13223AE80F00E849A0 /* Model Controllers */,
+				C3081B12223AE80C00E849A0 /* Models */,
+				C3081B0F223AE7E500E849A0 /* Storyboards */,
+				C3081B16223AE84400E849A0 /* Resources */,
+			);
+			path = KanyeKwotesCoreData;
+			sourceTree = "<group>";
+		};
+		C3081B0F223AE7E500E849A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				C3081AFD223AE7D700E849A0 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			path = "New Group/Storyboards";
+			sourceTree = "<group>";
+		};
+		C3081B12223AE80C00E849A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3081B00223AE7D700E849A0 /* KanyeKwotesCoreData.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3081B13223AE80F00E849A0 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		C3081B14223AE81000E849A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3081B15223AE81100E849A0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3081B16223AE84400E849A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3081AF9223AE7D700E849A0 /* AppDelegate.swift */,
 				C3081B03223AE7D900E849A0 /* Assets.xcassets */,
 				C3081B05223AE7D900E849A0 /* LaunchScreen.storyboard */,
 				C3081B08223AE7D900E849A0 /* Info.plist */,
-				C3081B00223AE7D700E849A0 /* KanyeKwotesCoreData.xcdatamodeld */,
 			);
-			path = KanyeKwotesCoreData;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3081AFC223AE7D700E849A0 /* ViewController.swift in Sources */,
 				C3081B02223AE7D700E849A0 /* KanyeKwotesCoreData.xcdatamodeld in Sources */,
 				C3081AFA223AE7D700E849A0 /* AppDelegate.swift in Sources */,
 			);
@@ -288,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = KanyeKwotesCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KanyeKwotesCoreData/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = KanyeKwotesCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KanyeKwotesCoreData/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
